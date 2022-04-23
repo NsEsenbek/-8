@@ -84,7 +84,5 @@ while not stop_game:
     screen.blit(text_score, (game_wight - 50, 5))
     if x_enemy - persons_wight < x < x_enemy + persons_wight and game_height - (2 * persons_height) + 20 < y_enemy < game_height:
         stop_game = True
-    print(moment)
-    print(cycle)
     pygame.display.flip()
     clock.tick(game_speed)
